@@ -21,7 +21,7 @@ import psutil
 
 # Default values
 defaults = {
-    "isaac_sim_version": "2023.1.1",
+    "isaac_sim_version": "4.1.0",
     "isaac_sim_path": "",
     "use_internal_libs": False,
     "dds_type": "fastdds",
@@ -110,7 +110,7 @@ class IsaacSimLauncherNode(Node):
             home_var = "USERPROFILE" if sys.platform == "win32" else "HOME"
             home_path = os.getenv(home_var)
 
-            if version_ge(args.version, "2023.1.1") and not version_gt(args.version, "2021.2.0"):
+            if version_ge(args.version, "4.1.0") and not version_gt(args.version, "2021.2.0"):
                 if sys.platform == "win32":
                     filepath_root = os.path.join(home_path, "AppData", "Local", "ov", "pkg", f"isaac-sim-{args.version}")
                 else:
