@@ -1,5 +1,5 @@
-usd
-build
-install
-log
+private/
+build/
+install/
+log/
 src/turtlebot3_description

@@ -1,0 +1,1 @@
+~/.local/share/ov/pkg/isaac-sim-2023.1.1/omni.isaac.sim.warmup.sh
